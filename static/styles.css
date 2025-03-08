@@ -1,0 +1,152 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #4a90e2;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Unified Input Box */
+.input-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-container input[type="text"] {
+    width: 100%;
+    padding: 10px 120px 10px 10px; /* Adjust padding */
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+.input-container .file-upload-button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 45%;
+    background-color: #4a90e2;
+    color: white;
+    padding: 0 16px;
+    border: none;
+    border-radius: 0 4px 4px 0; /* Rounded corners on the right side */
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-container .file-upload-button:hover {
+    background-color: #357abd;
+}
+
+/* Process Button */
+.process-button {
+    margin-top: 10px;
+    background-color: #4a90e2;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+.process-button:hover {
+    background-color: #357abd;
+}
+
+/* Query Form Styles */
+.query-form {
+    margin-bottom: 30px;
+}
+
+.query-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.query-form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+.query-form button {
+    background-color: #4a90e2;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.query-form button:hover {
+    background-color: #357abd;
+}
+
+/* Response Styles */
+.response {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.response h3 {
+    color: #4a90e2;
+    margin-bottom: 10px;
+}
+
+.response p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Flash Message Styles */
+.flash-message {
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #ffeb3b;
+    border: 1px solid #ffc107;
+    border-radius: 4px;
+    color: #333;
+    font-size: 16px;
+}
+
+.flash-message p {
+    margin: 0;
+}
