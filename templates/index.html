@@ -45,6 +45,9 @@
                 <input type="text" name="query" id="query" placeholder="Enter your question" required>
                 <button type="submit" class="process-button">Ask</button>
             </form>
+            <form action="/clear" method="post">
+                <button type="submit" class="clear-button">Clear Session</button>
+            </form>
         </div>
 
         <!-- Response -->
@@ -63,13 +66,6 @@
         document.getElementById('file').addEventListener('change', function() {
             const fileName = this.files[0] ? this.files[0].name : '';
             document.getElementById('url_or_file').value = fileName;
-        });
-
-        // Prevent manual editing when a file is selected
-        document.getElementById('url_or_file').addEventListener('input', function() {
-            if (document.getElementById('file').files.length > 0) {
-                this.value = document.getElementById('file').files[0].name;
-            }
         });
     </script>
 </body>
